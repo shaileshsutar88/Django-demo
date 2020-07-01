@@ -29,6 +29,6 @@ python manage.py runserver
 Check http://localhost:8000 or http://127.0.0.1:8000 for the dynamo code.
 
 
-###### There are 2 applications currently in this repo.
+##### There are 2 applications currently in this repo.
 1. Password generator
 2. Token generator
