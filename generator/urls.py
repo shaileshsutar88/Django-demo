@@ -21,5 +21,9 @@ from dynamo import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='Home'),
-    path('dynamo/', views.dynamo, name='Dynamo')
+    path('dynamo/', views.dynamo, name='Dynamo'),
+    path('password/', views.password, name='password'),
+    path('token/', views.Token, name='Token'),
+    path('keepsake/', views.keepsake, name='KeepSake'),
+    path('about/', views.about, name='About')
 ]
