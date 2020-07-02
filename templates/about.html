@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<html lang="en" dir="ltr">
+{% extends 'base.html' %}
+
+{% block content %}
   <head>
     <meta charset="utf-8">
-    <title>This is about page.</title>
+    <title>This is about page</title>
   </head>
   <body>
     <div class="container text-center">
-    <h1> Hi There!!! This is about page for dynamo app.</h1>
+    <h1> Hi There!!! This is about page.</h1>
     <h2> Dynamo generates password for you with different combination of your choice.</h2>
     <h2> Keepsake generates token for you. This is very raw currently.</h2>
     <h3> Author : Shailesh Sutar <h3>
     <h4> Date : July 1st, 2020 </h4>
     <a href="{% url 'Home' %}">Home</a>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </div>
   </body>
-</html>
+{% endblock content %}
