@@ -48,16 +48,18 @@ def keepsake(request):
     token = token.strftime("%Y%m%d")
     c = int(time.time())
     c = c % 86400
-    if request.GET.get('Account Enquiry'):
-        token = str(token + 'AE' + c)
-    elif request.GET.get('Cash Deposit'):
-        token = str(token + 'CD' + c)
-    elif request.GET.get('Cash Withdrawl'):
-        token = str(token + 'CW' + c)
-    elif request.GET.get('Cheque Submission'):
-        token = str(token + 'CS' + c)
-    elif request.GET.get('Passbook Update'):
-        token = str(token + 'PU' + c)
+
+    Token = str(request.GET.get('Token-Type'))
+    if Token == 'Account Enquiry':
+        token = str(token + 'AE' + str(c))
+    elif Token == 'Cash Deposit':
+        token = str(token + 'CD' + str(c))
+    elif Token == 'Cash Withdrawl':
+        token = str(token + 'CW' + str(c))
+    elif Token == 'Cheque Submission':
+        token = str(token + 'CS' + str(c))
+    elif Token == 'Passbook Update':
+        token = str(token + 'PU' + str(c))
     else:
         token = str(token + 'GE' + str(c))
 

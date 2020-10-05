@@ -8,8 +8,8 @@
   <body>
     <div class="container text-center">
     <form action="{% url 'KeepSake' %}">
-      <select name="length">
-        <option value="Account Enquiry">Account Enquiry</option>
+      <select name="Token-Type">
+        <option value="Account Enquiry" selected="selected">Account Enquiry</option>
         <option value="Cash Deposit">Cash Deposit</option>
         <option value="Cash Withdraw">Cash Withdraw</option>
         <option value="Cheque Submission">Cheque submission</option>
@@ -17,7 +17,7 @@
         <option value="Passbook Update">Passbook Update</option>
         </select>
         <br>
-        <input type="submit" value="Generate Password" class="btn btn-primary">
+        <input type="submit" value="Generate Token" class="btn btn-primary">
         <br>
     </form>
   </div>
