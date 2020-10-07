@@ -2,7 +2,7 @@
 
 #### Ignore file in pycache folder.
 
-/dynamo/__pycache__/*
-/generator/__pycache__/*
+./dynamo/__pycache__/*
+./generator/__pycache__/*
 
-/python/*
+./python/*

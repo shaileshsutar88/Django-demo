@@ -25,5 +25,6 @@ urlpatterns = [
     path('password/', views.password, name='password'),
     path('token/', views.Token, name='Token'),
     path('keepsake/', views.keepsake, name='KeepSake'),
-    path('about/', views.about, name='About')
+    path('about/', views.about, name='About'),
+    path('keygen/', views.keygen, name='KeyGen')
 ]

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <head>
+    <meta charset="utf-8">
+    <title>Generate Token here.</title>
+  </head>
+  <body>
+    <div class="container text-center">
+    <form action="{% url 'KeepSake' %}">
+      <select name="bit-size">
+        <option value="512">512</option>
+        <option value="1024" selected="selected">1024</option>
+        <option value="2048">2048</option>
+        <option value="4096">4096</option>
+        </select>
+        <br>
+        <input type="submit" value="Generate Token" class="btn btn-primary">
+        <br>
+    </form>
+  </div>
+  </body>
+{% endblock content %}
